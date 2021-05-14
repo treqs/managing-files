@@ -1,34 +1,37 @@
-# Basic Windows File Management
+# Managing Files
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> Basic Windows file management with PowerShell
-
-- [Webpage](https://denisecase.github.io/windows-file-management/)
-- [Source](https://github.com/denisecase/windows-file-management/)
-
-## Prerequisites
-
-- [Windows Setup for Developers](https://github.com/denisecase/windows-setup)
+> Basic file management skills
 
 ## Organizing Files
 
-Windows arranges files in a tree structure, with the C:\ drive typically at the root of the tree.
-If a computer has been partitioned into multiple drives, you may see other drive names as well.
+File systems arrange files in a tree structure, with a single root directory.
+A computer may be partitioned into multiple drives, if so, each drive will have its own root. 
+Typically, there is a designated place to store user-created files. 
+In Mac and Linux machines, it's the 'home' folder.
+In Windows machines, it's the 'Documents' folder.
+Under here, the user may create folders for a degree program, and under that folder, users may create sub-folders, one for each of your courses.
 
-We can use PowerShell to create, delete, and rename folders, sub-folders, and files. It's a powerful tool for organizing your files.
+---
 
-For example, you may create a folder for school, and from inside that folder, create a sub-folder for each of your courses.
+## Working with Files on Windows
 
-## File Explorer
+On Windows, we can use either:
+
+- File Explorer: a graphical interface (where we can use the mouse).
+- PowerShell: a command line interface (where we can type commands).
+
+### File Explorer (Graphical Interface)
 
 The Windows File Explorer is a graphical way of browsing files.
 Use this along with the PowerShell command line interface (CLI).
 Folders and files can be added, edited, and deleted in File Explorer as well.
 
-## Basic PowerShell Commands
+### PowerShell (Command Interface)
 
+ We can use PowerShell to create, delete, and rename folders, sub-folders, and files. It's a powerful tool for organizing your files.
 PowerShell offers aliases (shortened names) for common commands.
 The full name is provided for additional reference [1].
 
@@ -41,13 +44,15 @@ The full name is provided for additional reference [1].
 - ls - list contents [Get-ChildItem]
 - clear - clear the history of commands [Clear-Host]
 
-## Open PowerShell in User Folder
+### Open PowerShell in User Folder
 
 Use File Explorer to open your user folder (e.g. C:\Users\acctname).
 Right-click on the folder itself (showing your account name) or in the white space off to the right.
 
 Select "Open PowerShell window here as administrator" from the context menu.
 If this is not yet available, see [Windows Setup for Developers](https://github.com/denisecase/windows-setup) to add this command to your context menu.
+
+---
 
 ## Working with Folders
 
@@ -82,6 +87,8 @@ rm startingup
 cd ..
 cd ..
 ```
+
+---
 
 ## Terms
 
